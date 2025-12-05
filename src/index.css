@@ -11,6 +11,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Cartoonish animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0) rotate(-2deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(-2deg);
+  }
+}
+
 * {
   box-sizing: border-box;
 }
