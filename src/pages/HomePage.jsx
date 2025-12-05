@@ -339,7 +339,7 @@ const HomePage = ({ onNavigate }) => {
             🎮 Défi Secondaire : L'Ergonomie Infernale 🎮
           </h2>
           <p className="text-lg mb-6 font-medium" style={{ color: COLORS.dark }}>
-            Découvrez notre défi Sopra Steria : un champ de saisie volontairement frustrant à utiliser !
+            Découvrez notre défi "Simplifier pour mieux vivre" : un champ de saisie volontairement frustrant à utiliser !
             Une expérience qui illustre l'importance de l'ergonomie dans le design.
           </p>
           <button
