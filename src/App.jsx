@@ -233,7 +233,7 @@ function App() {
                     </div>
                   </div>
                   
-                  {/* Video Player - Prêt pour la vidéo */}
+                  {/* Video Player */}
                   <div className="rounded-2xl overflow-hidden border-4 shadow-xl" style={{ borderColor: COLORS.gold }}>
                     <video 
                       controls 
@@ -252,10 +252,6 @@ function App() {
                       </p>
                     </video>
                   </div>
-                  
-                  <p className="text-sm mt-4 text-center" style={{ color: COLORS.dark, opacity: 0.7 }}>
-                    💡 Pour ajouter votre podcast, placez-le dans le dossier <code style={{ background: COLORS.beige, padding: '2px 6px', borderRadius: '4px' }}>public/</code> sous le nom <code style={{ background: COLORS.beige, padding: '2px 6px', borderRadius: '4px' }}>podcast-video.mp4</code>
-                  </p>
                 </div>
 
                 {/* Team Section */}
