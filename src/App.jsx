@@ -233,24 +233,17 @@ function App() {
                     </div>
                   </div>
                   
-                  {/* Video Player */}
+                  {/* Video Player - Google Drive */}
                   <div className="rounded-2xl overflow-hidden border-4 shadow-xl" style={{ borderColor: COLORS.gold }}>
-                    <video 
-                      controls 
-                      className="w-full"
-                      style={{ 
-                        display: 'block',
-                        background: COLORS.dark
-                      }}
-                    >
-                      <source src="/podcast-video.mp4" type="video/mp4" />
-                      <source src="/podcast-video.webm" type="video/webm" />
-                      <p style={{ color: COLORS.beige, padding: '2rem', textAlign: 'center' }}>
-                        Votre navigateur ne supporte pas la lecture de vidéos HTML5.
-                        <br />
-                        Téléchargez la vidéo : <a href="/podcast-video.mp4" style={{ color: COLORS.gold }}>podcast-video.mp4</a>
-                      </p>
-                    </video>
+                    <div className="relative" style={{ paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
+                      <iframe
+                        src="https://drive.google.com/file/d/1X9TKzz4PqY5S1XG1IgWAtiNTPDTyJQk0/preview"
+                        className="absolute top-0 left-0 w-full h-full"
+                        allow="autoplay"
+                        style={{ border: 'none' }}
+                        title="Podcast - Les femmes dans le numérique"
+                      />
+                    </div>
                   </div>
                 </div>
 
