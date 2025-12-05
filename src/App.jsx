@@ -237,7 +237,7 @@ function App() {
                   <div className="rounded-2xl overflow-hidden border-4 shadow-xl" style={{ borderColor: COLORS.gold }}>
                     <div className="relative" style={{ paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
                       <iframe
-                        src="https://drive.google.com/file/d/1X9TKzz4PqY5S1XG1IgWAtiNTPDTyJQk0/preview"
+                        src="https://drive.google.com/file/d/1hMLfZSxKOKYMgIZeFqgb5haiONKsQNDr/view?usp=sharing"
                         className="absolute top-0 left-0 w-full h-full"
                         allow="autoplay"
                         style={{ border: 'none' }}
