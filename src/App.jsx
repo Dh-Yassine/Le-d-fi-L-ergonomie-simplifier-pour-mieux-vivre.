@@ -12,7 +12,13 @@ const COLORS = {
 }
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('home') // 'home', 'challenge', 'quiz', or 'podcast'
+  // Initialize from hash or default to 'home'
+  const getPageFromHash = () => {
+    const hash = window.location.hash.slice(1) // Remove the '#'
+    return ['home', 'challenge', 'quiz', 'podcast'].includes(hash) ? hash : 'home'
+  }
+  
+  const [currentPage, setCurrentPage] = useState(getPageFromHash())
   const worldBgRef = useRef(null)
 
   useEffect(() => {
@@ -26,8 +32,21 @@ function App() {
     }
   }, [])
 
+  // Handle hash changes (for direct links)
+  useEffect(() => {
+    const handleHashChange = () => {
+      const page = getPageFromHash()
+      setCurrentPage(page)
+      window.scrollTo(0, 0)
+    }
+    
+    window.addEventListener('hashchange', handleHashChange)
+    return () => window.removeEventListener('hashchange', handleHashChange)
+  }, [])
+
   const handleNavigate = (page) => {
     setCurrentPage(page)
+    window.location.hash = page // Update URL hash for direct linking
     window.scrollTo(0, 0)
   }
 
